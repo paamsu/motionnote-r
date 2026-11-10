@@ -16,9 +16,10 @@ def prepare(row):
     shutil.copytree(source, dest)
     with sqlite3.connect(dest / "events.sqlite3") as c:
         for eid, raw in c.execute("select event_id,manifest from media").fetchall():
+            # manifest는 JSON 문자열이다. Windows 경로의 역슬래시가 들어가면 JSON이 깨지므로 / 경로로 넣는다
             c.execute(
                 "update media set manifest=? where event_id=?",
-                (raw.replace("@SCENE@", str(dest.resolve())), eid),
+                (raw.replace("@SCENE@", dest.resolve().as_posix()), eid),
             )
     store = Store(dest / "events.sqlite3")
     for e in store.list():
