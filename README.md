@@ -21,7 +21,7 @@ APK는 [GitHub Releases](../../releases)에 올려 두었습니다.
 |---|---|
 | 차량 에뮬레이터 | Pleos Connect Emulator v2.1.0 (Android 14, API 34) |
 | 빌드 | Android Studio, JDK 17, Android SDK 35 |
-| 시연 스크립트 | Python 3.11 이상, ADB |
+| 시연 스크립트 | Python 3.11 이상(3.14.6에서 확인), ADB, FFmpeg |
 
 Pleos 에뮬레이터 설치는 [Pleos Connect Emulator 설치 및 실행](https://document.pleos.ai/docs/connect/guide/getting-started/application-development/setup-connect-sdk-emulator) 문서를 따릅니다.
 
@@ -40,7 +40,11 @@ python3 -m venv .venv
 .venv/bin/python replay.py --scene road --serial emulator-5554 --user 10
 ```
 
-Windows에서는 `.venv/bin/python` 대신 `.venv\Scripts\python`을 씁니다. `replay.py`는 `demo/scenes.json`에 있는 사건 25개를 에뮬레이터에서 차례로 엽니다.
+Windows에서는 `python3` 대신 `py`, `.venv/bin/python` 대신 `.venv\Scripts\python`을 씁니다.
+
+- `--check`는 `demo/scenes.json`에 있는 사건 25개의 자료와 무결성 값을 확인합니다. 에뮬레이터는 쓰지 않습니다.
+- `--scene`으로 고른 사건 하나를 에뮬레이터 앱에서 엽니다.
+- 요약 장면(`summary`)은 영상 정보를 다시 읽기 때문에 FFmpeg의 `ffprobe`가 PATH에 있어야 합니다.
 
 ### 휴대폰 앱
 
