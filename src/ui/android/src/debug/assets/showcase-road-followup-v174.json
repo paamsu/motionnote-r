@@ -1,0 +1,69 @@
+{
+  "assessment": {
+    "diagnostic": {
+      "candidates": [],
+      "dtc_required": false,
+      "metrics": {
+        "baseline_v": 13.9,
+        "delta_v": 0.001,
+        "matched_samples": 600,
+        "voltage_median_v": 13.901
+      },
+      "missing": [
+        "charging_current",
+        "battery_temperature",
+        "physical_inspection"
+      ],
+      "rule": "synthetic-voltage-v1",
+      "scope": "development voltage rule only; not a complete vehicle diagnosis",
+      "summary": "현재 비교 구간에서 전압 이상을 찾지 못했습니다.",
+      "verdict": "no_anomaly_in_observed_signals"
+    },
+    "kind": "pothole",
+    "limitations": [
+      "개발 시험 기준이며 실차 성능 미검증",
+      "기관 연결은 모의 수신처"
+    ],
+    "metrics": {
+      "peak_vertical_g": 2.437
+    },
+    "policy_version": "development-v1",
+    "recipient": "municipality-mock",
+    "requires_confirmation": true,
+    "source": "synthetic",
+    "status": "pending_confirmation",
+    "title": "도로 파손 후보"
+  },
+  "evidence_valid": true,
+  "road_followup_case": {
+    "schema": "road-guardian.road-followup.v1",
+    "source": "synthetic",
+    "scope": "single_vehicle_development_comparison",
+    "repair_confirmed": false,
+    "road_safe": null,
+    "link_count": 1,
+    "stage": "no_repeat_signal",
+    "before": {
+      "peak_g": 2.4371,
+      "speed_kph": 42.0,
+      "samples": 600,
+      "sample_hz": 20,
+      "captured_at": 1700000000,
+      "duration_s": 29.95,
+      "unit": "g, gravity removed"
+    },
+    "after": {
+      "peak_g": 0.0699,
+      "speed_kph": 42.0,
+      "samples": 600,
+      "sample_hz": 20,
+      "captured_at": 1700000120,
+      "duration_s": 29.95,
+      "unit": "g, gravity removed"
+    },
+    "distance_m": 0.0,
+    "heading_difference_deg": 0,
+    "followup_id": "9e98ae53-f75e-403a-9de1-525f354c8c44",
+    "followup_sha256": "2fdce6d29296a7320c7d003232c757bee09c492b81bee71777436a9d9d7957c3"
+  }
+}

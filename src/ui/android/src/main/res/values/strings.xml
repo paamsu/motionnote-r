@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">R</string>
+    <string name="service_promise">자동차는 나를 지켜주는 가장 안전한 지킴이다</string>
+    <string name="owner_inbox_title">내 차 알림</string>
+</resources>

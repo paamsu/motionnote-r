@@ -1,0 +1,70 @@
+{
+  "id": "12345678-1234-1234-1234-123456789abc",
+  "created": 1792623600,
+  "source": "synthetic",
+  "evidence_valid": true,
+  "assessment": {
+    "title": "주차 중 충격 감지"
+  },
+  "data": {
+    "context": {
+      "source": "scenario_fixture",
+      "own_vehicle": {
+        "plate": "DEMO-OWN-01",
+        "brand": "Hyundai",
+        "model": "아이오닉 6",
+        "color": "흰색",
+        "source": "scenario_fixture"
+      },
+      "location_label": "테스트 주차장 · B2 · 24번 기둥",
+      "capture": {
+        "camera": "rear",
+        "trigger_seconds": 10,
+        "sensor_window_seconds": 30
+      },
+      "actors": [
+        {
+          "id": "vehicle-1",
+          "plate": "DEMO 4821",
+          "brand": "Hyundai",
+          "model": "쏘나타",
+          "body": "중형 세단",
+          "color": "은색",
+          "source": "scenario_fixture",
+          "recognition_status": "not_run",
+          "relationship": "충격 시각 주변 차량 · 가해 여부 미확정"
+        }
+      ],
+      "facts": [
+        {
+          "label": "차량 상태",
+          "value": "P단 · 0 km/h"
+        },
+        {
+          "label": "충격 위치",
+          "value": "우측 후방 (가상 설정)"
+        },
+        {
+          "label": "주변 차량",
+          "value": "은색 세단 1대"
+        }
+      ],
+      "unknowns": [
+        "번호판·차종은 가상 설정이며 인식 결과가 아님",
+        "접촉 및 책임 차량 미확정"
+      ],
+      "parking": {
+        "floor": "B2",
+        "landmark": "24번 기둥",
+        "bay": null,
+        "position_source": "authored_scenario"
+      },
+      "impact": {
+        "area": "우측 후방",
+        "area_source": "scenario_fixture",
+        "contact_confirmed": false
+      },
+      "actor_status": "가상 주변 차량 정보"
+    }
+  }
+}

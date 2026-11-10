@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.RoadGuardian" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+</resources>

@@ -1,0 +1,406 @@
+[
+  {
+    "id": "9c19ccb5-5fe3-4b0d-a330-23859401b4bd",
+    "created": 1792651654.08584,
+    "source": "synthetic",
+    "assessment": {
+      "diagnostic": {
+        "candidates": [
+          {
+            "certainty": "unconfirmed",
+            "component": "충전 계통 또는 연결부",
+            "counterevidence": [
+              "충전 전류와 연결부 저항 자료가 없어 원인을 확정할 수 없음"
+            ],
+            "next_tests": [
+              "정비사가 충전 전압·전류와 단자 전압 강하를 측정"
+            ],
+            "support": [
+              "기준 대비 전압 -2.19 V"
+            ]
+          },
+          {
+            "certainty": "unconfirmed",
+            "component": "배터리 상태",
+            "counterevidence": [
+              "전압만으로 배터리 용량이나 수명을 판단할 수 없음"
+            ],
+            "next_tests": [
+              "정차 후 배터리 부하 시험"
+            ],
+            "support": [
+              "전압 저하 반복"
+            ]
+          }
+        ],
+        "dtc_required": false,
+        "metrics": {
+          "baseline_v": 13.9,
+          "delta_v": -2.188,
+          "matched_samples": 600,
+          "voltage_median_v": 11.712
+        },
+        "missing": [
+          "charging_current",
+          "battery_temperature",
+          "physical_inspection"
+        ],
+        "rule": "synthetic-voltage-v1",
+        "scope": "development voltage rule only; not a complete vehicle diagnosis",
+        "summary": "같은 조건에서 전압이 낮습니다. 충전 계통 점검이 필요합니다.",
+        "verdict": "inspection_required"
+      },
+      "kind": "diagnosis",
+      "limitations": [
+        "개발 시험 기준이며 실차 성능 미검증",
+        "기관 연결은 모의 수신처"
+      ],
+      "metrics": {
+        "peak_vertical_g": 0.07
+      },
+      "policy_version": "development-v1",
+      "recipient": null,
+      "requires_confirmation": false,
+      "source": "synthetic",
+      "status": "evidence_ready",
+      "title": "차량 점검 필요"
+    },
+    "case_overview": {
+      "schema": "road-guardian.case-overview.v1",
+      "category": "maintenance",
+      "title": "정비 전후 비교",
+      "state": "comparison_available",
+      "label": "재측정 비교",
+      "steps": [
+        {
+          "label": "원본",
+          "status": "확인됨",
+          "state": 1
+        },
+        {
+          "label": "작업 기록",
+          "status": "모의 접수",
+          "state": 1
+        },
+        {
+          "label": "재측정",
+          "status": "비교 있음",
+          "state": 1
+        }
+      ],
+      "vehicle": {
+        "plate": "DEMO-OWN-01",
+        "model": "아이오닉 6"
+      },
+      "source": "synthetic",
+      "product_novelty_verified": false,
+      "external_completion_verified": false
+    }
+  },
+  {
+    "id": "27f3c8c9-21d5-4ed4-af6b-162b6dd40024",
+    "created": 1792651654.1084218,
+    "source": "synthetic",
+    "assessment": {
+      "diagnostic": {
+        "candidates": [],
+        "dtc_required": false,
+        "metrics": {
+          "baseline_v": 13.9,
+          "delta_v": 0.001,
+          "matched_samples": 600,
+          "voltage_median_v": 13.901
+        },
+        "missing": [
+          "charging_current",
+          "battery_temperature",
+          "physical_inspection"
+        ],
+        "rule": "synthetic-voltage-v1",
+        "scope": "development voltage rule only; not a complete vehicle diagnosis",
+        "summary": "현재 비교 구간에서 전압 이상을 찾지 못했습니다.",
+        "verdict": "no_anomaly_in_observed_signals"
+      },
+      "kind": "pothole",
+      "limitations": [
+        "개발 시험 기준이며 실차 성능 미검증",
+        "기관 연결은 모의 수신처"
+      ],
+      "metrics": {
+        "peak_vertical_g": 2.437
+      },
+      "policy_version": "development-v1",
+      "recipient": "municipality-mock",
+      "requires_confirmation": true,
+      "source": "synthetic",
+      "status": "pending_confirmation",
+      "title": "도로 파손 후보"
+    },
+    "case_overview": {
+      "schema": "road-guardian.case-overview.v1",
+      "category": "road",
+      "title": "도로 근거 검토",
+      "state": "awaiting_followup",
+      "label": "후속 관측 대기",
+      "steps": [
+        {
+          "label": "원본",
+          "status": "확인됨",
+          "state": 1
+        },
+        {
+          "label": "항목 검토",
+          "status": "3/6",
+          "state": 2
+        },
+        {
+          "label": "후속 관측",
+          "status": "대기",
+          "state": 0
+        }
+      ],
+      "vehicle": {
+        "plate": "DEMO-OWN-01",
+        "model": "아이오닉 6"
+      },
+      "source": "synthetic",
+      "product_novelty_verified": false,
+      "external_completion_verified": false
+    }
+  },
+  {
+    "id": "b0b035d3-0630-4ad9-863d-78248db719aa",
+    "created": 1792651654.1123788,
+    "source": "synthetic",
+    "assessment": {
+      "diagnostic": {
+        "candidates": [],
+        "dtc_required": false,
+        "metrics": {
+          "baseline_v": 13.9,
+          "delta_v": 0.001,
+          "matched_samples": 600,
+          "voltage_median_v": 13.901
+        },
+        "missing": [
+          "charging_current",
+          "battery_temperature",
+          "physical_inspection"
+        ],
+        "rule": "synthetic-voltage-v1",
+        "scope": "development voltage rule only; not a complete vehicle diagnosis",
+        "summary": "현재 비교 구간에서 전압 이상을 찾지 못했습니다.",
+        "verdict": "no_anomaly_in_observed_signals"
+      },
+      "kind": "crash",
+      "limitations": [
+        "개발 시험 기준이며 실차 성능 미검증",
+        "기관 연결은 모의 수신처"
+      ],
+      "metrics": {
+        "peak_vertical_g": 2.437
+      },
+      "policy_version": "development-v1",
+      "recipient": "insurance-mock",
+      "requires_confirmation": false,
+      "source": "synthetic",
+      "status": "evidence_ready",
+      "title": "충돌 신호 감지"
+    },
+    "case_overview": {
+      "schema": "road-guardian.case-overview.v1",
+      "category": "incident",
+      "title": "충돌 근거 정리",
+      "state": "needs_review",
+      "label": "추가 자료 확인",
+      "steps": [
+        {
+          "label": "원본",
+          "status": "확인됨",
+          "state": 1
+        },
+        {
+          "label": "현장 영상",
+          "status": "미취득",
+          "state": 0
+        },
+        {
+          "label": "접촉·책임",
+          "status": "미확정",
+          "state": 0
+        }
+      ],
+      "vehicle": {
+        "plate": "DEMO-OWN-01",
+        "model": "아이오닉 6"
+      },
+      "source": "synthetic",
+      "product_novelty_verified": false,
+      "external_completion_verified": false
+    }
+  },
+  {
+    "id": "9c3f246e-6ada-4dab-a3f2-9454236f5069",
+    "created": 1792651654.115927,
+    "source": "synthetic",
+    "assessment": {
+      "diagnostic": {
+        "candidates": [],
+        "dtc_required": false,
+        "metrics": {
+          "baseline_v": 13.9,
+          "delta_v": 0.001,
+          "matched_samples": 600,
+          "voltage_median_v": 13.901
+        },
+        "missing": [
+          "charging_current",
+          "battery_temperature",
+          "physical_inspection"
+        ],
+        "rule": "synthetic-voltage-v1",
+        "scope": "development voltage rule only; not a complete vehicle diagnosis",
+        "summary": "현재 비교 구간에서 전압 이상을 찾지 못했습니다.",
+        "verdict": "no_anomaly_in_observed_signals"
+      },
+      "kind": "emergency",
+      "limitations": [
+        "개발 시험 기준이며 실차 성능 미검증",
+        "기관 연결은 모의 수신처"
+      ],
+      "metrics": {
+        "peak_vertical_g": 0.07
+      },
+      "policy_version": "development-v1",
+      "recipient": "119-mock",
+      "requires_confirmation": false,
+      "source": "synthetic",
+      "status": "evidence_ready",
+      "title": "무응답 대응 시험"
+    },
+    "case_overview": null
+  },
+  {
+    "id": "9f1a022c-d794-42d8-a0e2-2d018a0a40f3",
+    "created": 1792651654.119634,
+    "source": "synthetic",
+    "assessment": {
+      "diagnostic": {
+        "candidates": [],
+        "dtc_required": false,
+        "metrics": {
+          "baseline_v": 13.9,
+          "delta_v": 0.001,
+          "matched_samples": 600,
+          "voltage_median_v": 13.901
+        },
+        "missing": [
+          "charging_current",
+          "battery_temperature",
+          "physical_inspection"
+        ],
+        "rule": "synthetic-voltage-v1",
+        "scope": "development voltage rule only; not a complete vehicle diagnosis",
+        "summary": "현재 비교 구간에서 전압 이상을 찾지 못했습니다.",
+        "verdict": "no_anomaly_in_observed_signals"
+      },
+      "kind": "parking",
+      "limitations": [
+        "개발 시험 기준이며 실차 성능 미검증",
+        "기관 연결은 모의 수신처"
+      ],
+      "metrics": {
+        "peak_vertical_g": 2.437
+      },
+      "policy_version": "development-v1",
+      "recipient": "owner-app-mock",
+      "requires_confirmation": false,
+      "source": "synthetic",
+      "status": "evidence_ready",
+      "title": "주차 중 충격 감지"
+    },
+    "case_overview": null
+  },
+  {
+    "id": "bfc998e8-bac0-47b2-9112-b0c65a057c26",
+    "created": 1792651654.123316,
+    "source": "synthetic",
+    "assessment": {
+      "diagnostic": {
+        "candidates": [],
+        "dtc_required": false,
+        "metrics": {
+          "baseline_v": 13.9,
+          "delta_v": 0.001,
+          "matched_samples": 600,
+          "voltage_median_v": 13.901
+        },
+        "missing": [
+          "charging_current",
+          "battery_temperature",
+          "physical_inspection"
+        ],
+        "rule": "synthetic-voltage-v1",
+        "scope": "development voltage rule only; not a complete vehicle diagnosis",
+        "summary": "현재 비교 구간에서 전압 이상을 찾지 못했습니다.",
+        "verdict": "no_anomaly_in_observed_signals"
+      },
+      "kind": "rain",
+      "limitations": [
+        "개발 시험 기준이며 실차 성능 미검증",
+        "기관 연결은 모의 수신처"
+      ],
+      "metrics": {
+        "peak_vertical_g": 0.07
+      },
+      "policy_version": "development-v1",
+      "recipient": null,
+      "requires_confirmation": false,
+      "source": "synthetic",
+      "status": "evidence_ready",
+      "title": "전방 시야 저하"
+    },
+    "case_overview": null
+  },
+  {
+    "id": "373b6111-fe36-4b03-8c4e-1ccc87295f65",
+    "created": 1792651654.126888,
+    "source": "synthetic",
+    "assessment": {
+      "diagnostic": {
+        "candidates": [],
+        "dtc_required": false,
+        "metrics": {
+          "baseline_v": 13.9,
+          "delta_v": 0.001,
+          "matched_samples": 600,
+          "voltage_median_v": 13.901
+        },
+        "missing": [
+          "charging_current",
+          "battery_temperature",
+          "physical_inspection"
+        ],
+        "rule": "synthetic-voltage-v1",
+        "scope": "development voltage rule only; not a complete vehicle diagnosis",
+        "summary": "현재 비교 구간에서 전압 이상을 찾지 못했습니다.",
+        "verdict": "no_anomaly_in_observed_signals"
+      },
+      "kind": "wanted",
+      "limitations": [
+        "개발 시험 기준이며 실차 성능 미검증",
+        "기관 연결은 모의 수신처"
+      ],
+      "metrics": {
+        "peak_vertical_g": 0.07
+      },
+      "policy_version": "development-v1",
+      "recipient": "112-mock",
+      "requires_confirmation": false,
+      "source": "synthetic",
+      "status": "evidence_ready",
+      "title": "시험 목록 번호 일치"
+    },
+    "case_overview": null
+  }
+]

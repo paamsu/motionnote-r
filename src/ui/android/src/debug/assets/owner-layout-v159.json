@@ -1,0 +1,94 @@
+{
+  "id": "815a4f6b-82b0-4a45-b0bf-03d427ae9f4d",
+  "request_key": "owner:815a4f6b-82b0-4a45-b0bf-03d427ae9f4d",
+  "created": 1792711860.083033,
+  "source": "owner_reported",
+  "hash": "5be41abd4b6a001d65e884df1f07259f8141e712436f8b362e56800044032607",
+  "assessment": {
+    "kind": "owner_record",
+    "category": "maintenance",
+    "title": "정비 자료 보관 시험",
+    "status": "unassessed",
+    "automatic_assessment": false,
+    "responsibility_determined": false,
+    "external_submission": false
+  },
+  "status": "owner_recorded",
+  "evidence_valid": true,
+  "data": {
+    "category": "maintenance",
+    "context": {
+      "actors": [],
+      "own_vehicle": {
+        "color": "은색 입력 시험",
+        "model": "작성 차종 시험",
+        "plate": "TEST-OWNER-01",
+        "source": "owner_reported"
+      },
+      "source": "owner_reported",
+      "unknowns": [
+        "사용자가 직접 작성한 내용 · 사실 여부와 차량 정보 별도 확인 필요"
+      ]
+    },
+    "description": "화면 배치를 확인하는 직접 작성 시험 자료입니다. 실제 정비·사고를 주장하지 않습니다.",
+    "reported_at": null,
+    "schema": "road-guardian.owner-record.v1",
+    "source": "owner_reported",
+    "title": "정비 자료 보관 시험",
+    "vehicle_id": "layout-vehicle"
+  },
+  "video": null,
+  "history": [
+    {
+      "seq": 1,
+      "event_id": "815a4f6b-82b0-4a45-b0bf-03d427ae9f4d",
+      "at": 1792711860.083033,
+      "action": "owner_case_created",
+      "detail": "{\"automatic_assessment\":false,\"source\":\"owner_reported\"}"
+    }
+  ],
+  "dispatches": [],
+  "repair": null,
+  "diagnostic_valid": false,
+  "insurance_case": null,
+  "repair_case": null,
+  "road_evidence_review": null,
+  "road_followup_case": null,
+  "evidence_dossier": null,
+  "content_kind": "owner_reported_record",
+  "sensor_original": false,
+  "export_available": true,
+  "content_original_json": "{\"category\":\"maintenance\",\"context\":{\"actors\":[],\"own_vehicle\":{\"color\":\"은색 입력 시험\",\"model\":\"작성 차종 시험\",\"plate\":\"TEST-OWNER-01\",\"source\":\"owner_reported\"},\"source\":\"owner_reported\",\"unknowns\":[\"사용자가 직접 작성한 내용 · 사실 여부와 차량 정보 별도 확인 필요\"]},\"description\":\"화면 배치를 확인하는 직접 작성 시험 자료입니다. 실제 정비·사고를 주장하지 않습니다.\",\"reported_at\":null,\"schema\":\"road-guardian.owner-record.v1\",\"source\":\"owner_reported\",\"title\":\"정비 자료 보관 시험\",\"vehicle_id\":\"layout-vehicle\"}",
+  "creation_request_id": "17bf8b56-99e3-4e53-9fd0-d70d020b74dd",
+  "case_overview": {
+    "schema": "road-guardian.case-overview.v1",
+    "category": "maintenance",
+    "title": "정비 자료 보관 시험",
+    "state": "owner_recorded",
+    "label": "본인 작성 · 사실 확인 전",
+    "steps": [
+      {
+        "label": "작성 내용",
+        "status": "해시 일치",
+        "state": 1
+      },
+      {
+        "label": "센서 자료",
+        "status": "별도 추가",
+        "state": 0
+      },
+      {
+        "label": "외부 제출",
+        "status": "미실시",
+        "state": 0
+      }
+    ],
+    "vehicle": {
+      "plate": "TEST-OWNER-01",
+      "model": "작성 차종 시험"
+    },
+    "source": "owner_reported",
+    "product_novelty_verified": false,
+    "external_completion_verified": false
+  }
+}

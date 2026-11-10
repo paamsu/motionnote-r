@@ -1,0 +1,98 @@
+{
+  "pothole": {
+    "mode": "synthetic-only",
+    "vehicle": {
+      "id": "demo-kia-receiver",
+      "source": "synthetic",
+      "brand": "Kia",
+      "authenticated": true,
+      "lat": 37.5,
+      "lon": 126.997,
+      "heading": 90,
+      "accuracy_m": 8,
+      "road_id": "demo-road-east",
+      "speed_kph": 42
+    },
+    "warnings": [
+      {
+        "id": "e2c4ec8dc19ce172",
+        "kind": "pothole",
+        "location": {
+          "accuracy_m": 8,
+          "heading": 90,
+          "lat": 37.5,
+          "lon": 127.0,
+          "road_id": "demo-road-east"
+        },
+        "source": "synthetic",
+        "event_ids": [
+          "63f1de1b-e502-4472-9713-b9ffe6be57f3"
+        ],
+        "expires_at": 1792724987.830776,
+        "latest_at": 1792638587.830776,
+        "independent_vehicle_count": 1,
+        "report_count": 1,
+        "message": "도로 파손 주의",
+        "lane_guidance": null,
+        "advisory": {
+          "title": "도로 파손 주의",
+          "instruction": "전방 도로 상태를 확인하고 서행하세요.",
+          "basis": "운전자 확인을 거친 도로 충격 기록",
+          "lane_status": "차로 정보 없음 · 차로 변경 안내 없음",
+          "direction": "같은 도로 · 같은 진행 방향"
+        },
+        "distance_m": 264,
+        "eta_seconds": 23
+      }
+    ],
+    "generated_at": 1792638587.834555
+  },
+  "rain": {
+    "mode": "synthetic-only",
+    "vehicle": {
+      "id": "demo-kia-receiver",
+      "source": "synthetic",
+      "brand": "Kia",
+      "authenticated": true,
+      "lat": 37.5,
+      "lon": 126.997,
+      "heading": 90,
+      "accuracy_m": 8,
+      "road_id": "demo-road-east",
+      "speed_kph": 42
+    },
+    "warnings": [
+      {
+        "id": "ea6c02c12ac460fa",
+        "kind": "rain",
+        "location": {
+          "accuracy_m": 8,
+          "heading": 90,
+          "lat": 37.5,
+          "lon": 127.0,
+          "road_id": "demo-road-east"
+        },
+        "source": "synthetic",
+        "event_ids": [
+          "6f2b22af-58fe-4780-a30a-3a7ce72f1949"
+        ],
+        "expires_at": 1792639487.8359349,
+        "latest_at": 1792638587.8359349,
+        "independent_vehicle_count": 1,
+        "report_count": 1,
+        "message": "시야 저하 주의",
+        "lane_guidance": null,
+        "advisory": {
+          "title": "시야 저하 주의",
+          "instruction": "전방 시야 저하 구간입니다. 감속하고 안전거리를 확보하세요.",
+          "basis": "와이퍼·시야·우적 신호를 함께 확인한 기록",
+          "lane_status": "차로 정보 없음 · 차로 변경 안내 없음",
+          "direction": "같은 도로 · 같은 진행 방향"
+        },
+        "distance_m": 264,
+        "eta_seconds": 23
+      }
+    ],
+    "generated_at": 1792638587.8377001
+  }
+}

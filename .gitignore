@@ -1,0 +1,16 @@
+# APK는 GitHub Releases에 올린다
+*.apk
+
+# 빌드 결과와 개인 설정
+.gradle/
+build/
+**/build/
+local.properties
+.idea/
+*.iml
+
+# 시연 실행 결과
+runs/
+**/runs/
+.venv/
+__pycache__/

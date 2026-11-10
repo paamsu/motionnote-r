@@ -1,0 +1,129 @@
+[
+  {
+    "scene": "violation",
+    "event_id": "080ab697-e2d1-44eb-aea7-29adead9e598",
+    "has_video": true
+  },
+  {
+    "scene": "wanted",
+    "event_id": "ce416c46-2efc-42a3-befc-eaf2046607ab",
+    "has_video": true
+  },
+  {
+    "scene": "reckless",
+    "event_id": "6bd75e22-b26f-4672-b7dc-4ba1034d5dd7",
+    "has_video": true
+  },
+  {
+    "scene": "summary",
+    "event_id": "20ec5d7b-e93c-4a40-8583-71f498792e31",
+    "has_video": true
+  },
+  {
+    "scene": "road",
+    "event_id": "4a2aa5ea-370c-458b-8f71-35c392868160",
+    "has_video": true
+  },
+  {
+    "scene": "road_urban",
+    "event_id": "839cb0de-b273-4abf-9524-485aa3f4dd77",
+    "has_video": true
+  },
+  {
+    "scene": "road_followup_clear",
+    "event_id": "09b878b2-f75f-469c-8d28-31941f1d01f4",
+    "has_video": true
+  },
+  {
+    "scene": "road_followup_repeat",
+    "event_id": "f9a29f58-fe72-4c11-8d18-519e4f9a003a",
+    "has_video": true
+  },
+  {
+    "scene": "crash",
+    "event_id": "53267fb0-60a8-41ce-a1e5-3e27a281bbcf",
+    "has_video": true
+  },
+  {
+    "scene": "rain",
+    "event_id": "2ce487f9-b6de-4edb-8e96-76d59fc8dd0c",
+    "has_video": true
+  },
+  {
+    "scene": "washer",
+    "event_id": "93b90c7a-654d-4f0c-be3f-ffec53d0888a",
+    "has_video": true
+  },
+  {
+    "scene": "illumination",
+    "event_id": "747d2b3d-08da-458f-819c-39071033ab2f",
+    "has_video": true
+  },
+  {
+    "scene": "diagnosis",
+    "event_id": "4bc4628f-8c10-488c-9d4f-e83daae001d4",
+    "has_video": true
+  },
+  {
+    "scene": "healthy",
+    "event_id": "4e2b7be5-dde8-4c3f-ae7c-b42fe3d6c37f",
+    "has_video": true
+  },
+  {
+    "scene": "repeat_voltage",
+    "event_id": "58f8a557-4c2a-4fce-bdb7-9a47baa38c26",
+    "has_video": true
+  },
+  {
+    "scene": "recovered_voltage",
+    "event_id": "5690ecca-477c-44b5-bb0b-aae9236e1497",
+    "has_video": true
+  },
+  {
+    "scene": "speed_bump",
+    "event_id": "44dd759e-5347-4656-9d10-6d71e52db684",
+    "has_video": true
+  },
+  {
+    "scene": "emergency",
+    "event_id": "34229fc8-22f7-45ec-aace-43bf4e26d01e",
+    "has_video": true
+  },
+  {
+    "scene": "timeline_waiting",
+    "event_id": "8eb8f884-cd2b-461f-930c-4a77c756bbe4",
+    "has_video": true
+  },
+  {
+    "scene": "timeline_responded",
+    "event_id": "790a56b6-82a8-4397-8580-ec59da7a0f15",
+    "has_video": true
+  },
+  {
+    "scene": "timeline_cancelled",
+    "event_id": "9b2aac57-8ad6-44d2-80fc-06198dd4ea13",
+    "has_video": true
+  },
+  {
+    "scene": "help_119",
+    "event_id": "340529ef-95c3-4529-b2d6-8808e80aa116",
+    "has_video": true
+  },
+  {
+    "scene": "help_112",
+    "event_id": "06588974-3a2a-498c-8de7-02b1ce626100",
+    "has_video": true
+  },
+  {
+    "scene": "parking_impact",
+    "event_id": "0c587009-6b22-483f-a329-f811fb5461f6",
+    "has_video": false,
+    "scope": "Preserved representative event; existing mock completion replay, not fresh detection"
+  },
+  {
+    "scene": "witness_auto_119",
+    "event_id": "243c508c-412a-44cb-9aaf-a2c3a9b9c41d",
+    "has_video": true,
+    "scope": "Preserved representative event; existing mock completion replay, not fresh detection"
+  }
+]

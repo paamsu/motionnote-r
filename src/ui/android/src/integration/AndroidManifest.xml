@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <application android:networkSecurityConfig="@xml/integration_security" android:label="내편 HTTPS 로컬 시험" tools:replace="android:label">
+        <activity android:name="ai.teraq.roadguardian.IntegrationSessionActivity" android:exported="true" />
+        <activity android:name="ai.teraq.roadguardian.ObservationPanelPreviewActivity" android:exported="false" />
+        <activity android:name="ai.teraq.roadguardian.VehicleMeasurementsPreviewActivity" android:exported="false" />
+        <activity android:name="ai.teraq.roadguardian.PhotoPanelPreviewActivity" android:exported="false" />
+        <activity android:name="ai.teraq.roadguardian.PowertrainLargeTextActivity" android:exported="false" />
+        <activity android:name="ai.teraq.roadguardian.MeasurementLargeTextActivity" android:exported="false" />
+        <activity android:name="net.openid.appauth.RedirectUriReceiverActivity" tools:node="remove" />
+    </application>
+    <instrumentation android:name="ai.teraq.roadguardian.AuthenticatedHttpsProbe" android:targetPackage="${applicationId}" android:label="Local synthetic authenticated HTTPS integration" />
+    <instrumentation android:name="ai.teraq.roadguardian.ReviewNotesHttpsProbe" android:targetPackage="${applicationId}" android:label="Local private review notes HTTPS integration" />
+    <instrumentation android:name="ai.teraq.roadguardian.SdkObservationHttpsProbe" android:targetPackage="${applicationId}" android:label="Actual SDK to authenticated observation storage" />
+    <instrumentation android:name="ai.teraq.roadguardian.ObservationPanelHttpsProbe" android:targetPackage="${applicationId}" android:label="Private observation HTTPS UI validation" />
+    <instrumentation android:name="ai.teraq.roadguardian.OwnerCaseHttpsProbe" android:targetPackage="${applicationId}" android:label="Private owner-authored case HTTPS validation" />
+    <instrumentation android:name="ai.teraq.roadguardian.OwnerExportHttpsProbe" android:targetPackage="${applicationId}" android:label="Private owner record export validation" />
+    <instrumentation android:name="ai.teraq.roadguardian.CasePhotoHttpsProbe" android:targetPackage="${applicationId}" android:label="Private case photo conversion and HTTPS validation" />
+    <instrumentation android:name="ai.teraq.roadguardian.PhotoPanelHttpsProbe" android:targetPackage="${applicationId}" android:label="Private photo read-only shared renderer validation" />
+    <instrumentation android:name="ai.teraq.roadguardian.PowertrainHttpsProbe" android:targetPackage="${applicationId}" android:label="Synthetic upstream powertrain HTTPS and phone rendering validation" />
+    <instrumentation android:name="ai.teraq.roadguardian.MeasurementExportHttpsProbe" android:targetPackage="${applicationId}" android:label="Selected measurement export HTTPS verification" />
+    <instrumentation android:name="ai.teraq.roadguardian.VehicleMeasurementsHttpsProbe" android:targetPackage="${applicationId}" android:label="Read-only vehicle measurements TLS rendering verification" />
+    <instrumentation android:name="ai.teraq.roadguardian.MeasurementHttpsProbe" android:targetPackage="${applicationId}" android:label="Private timed measurement HTTPS and phone flow validation" />
+<instrumentation android:name="ai.teraq.roadguardian.PhotoSceneHttpsProbe" android:targetPackage="${applicationId}" /><instrumentation android:name="ai.teraq.roadguardian.PhotoPairHttpsProbe" android:targetPackage="${applicationId}" /><instrumentation android:name="ai.teraq.roadguardian.MeasurementMediaHttpsProbe" android:targetPackage="${applicationId}" /><instrumentation android:name="ai.teraq.roadguardian.PrivatePhotoAccessProbe" android:targetPackage="${applicationId}" /><instrumentation android:name="ai.teraq.roadguardian.PhotoContextFlowProbe" android:targetPackage="${applicationId}" /><instrumentation android:name="ai.teraq.roadguardian.MeasurementSystemPickerProbe" android:targetPackage="${applicationId}" /></manifest>

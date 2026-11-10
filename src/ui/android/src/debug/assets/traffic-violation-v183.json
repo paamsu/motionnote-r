@@ -1,0 +1,4976 @@
+{
+  "id": "5bd23770-56d8-453b-b25d-ce36a61c62d9",
+  "request_key": "contest-violation",
+  "created": 1792804402.747479,
+  "source": "synthetic",
+  "hash": "31e3a3f8feb861c71808b3c07ce539309e77fabbfec2883f2b992512a84d938e",
+  "assessment": {
+    "diagnostic": {
+      "candidates": [],
+      "dtc_required": false,
+      "metrics": {
+        "baseline_v": 13.9,
+        "delta_v": 0.001,
+        "matched_samples": 600,
+        "voltage_median_v": 13.901
+      },
+      "missing": [
+        "charging_current",
+        "battery_temperature",
+        "physical_inspection"
+      ],
+      "rule": "synthetic-voltage-v1",
+      "scope": "development voltage rule only; not a complete vehicle diagnosis",
+      "summary": "현재 비교 구간에서 전압 이상을 찾지 못했습니다.",
+      "verdict": "no_anomaly_in_observed_signals"
+    },
+    "kind": "violation",
+    "limitations": [
+      "개발 시험 기준이며 실차 성능 미검증",
+      "기관 연결은 모의 수신처"
+    ],
+    "metrics": {
+      "peak_vertical_g": 0.07
+    },
+    "policy_version": "development-v1",
+    "recipient": "public-report-mock",
+    "requires_confirmation": true,
+    "source": "synthetic",
+    "status": "pending_confirmation",
+    "title": "주정차 위반 후보"
+  },
+  "status": "pending_confirmation",
+  "evidence_valid": true,
+  "data": {
+    "baseline": {
+      "rpm": 1200,
+      "source": "synthetic matched conditions",
+      "temperature_c": 22,
+      "voltage": 13.9
+    },
+    "brand": "Hyundai",
+    "context": {
+      "actor_status": "가상 주변 차량 정보",
+      "actors": [
+        {
+          "brand": "Hyundai",
+          "color": "검정",
+          "id": "vehicle-1",
+          "model": "스타리아",
+          "plate": "DEMO 6210",
+          "recognition_status": "not_run",
+          "relationship": "보호구역에 정차한 관측 차량",
+          "source": "scenario_fixture"
+        }
+      ],
+      "capture": {
+        "camera": "front",
+        "sensor_window_seconds": 30,
+        "trigger_seconds": 10
+      },
+      "facts": [
+        {
+          "label": "구역",
+          "value": "보호구역 (가상)"
+        },
+        {
+          "label": "관측 차량 정지",
+          "value": "180초"
+        },
+        {
+          "label": "판단",
+          "value": "신고 후보 · 확인 필요"
+        }
+      ],
+      "location_label": "가상 시험 구간",
+      "own_vehicle": {
+        "brand": "Hyundai",
+        "color": "흰색",
+        "model": "아이오닉 6",
+        "plate": "DEMO-OWN-01",
+        "source": "scenario_fixture"
+      },
+      "source": "scenario_fixture",
+      "unknowns": [
+        "시간대·표지·예외 사유 확인 필요",
+        "번호·차종·정지 시간은 가상 관측 설정"
+      ]
+    },
+    "location": {
+      "accuracy_m": 8,
+      "heading": 90,
+      "lat": 37.5,
+      "lon": 127.0,
+      "road_id": "demo-road-east"
+    },
+    "media": {
+      "reason": "synthetic sensor fixture; no real camera evidence",
+      "status": "not_captured"
+    },
+    "observations": {
+      "abrupt_manoeuvres": 0,
+      "airbag": false,
+      "authorized_fixture_match": false,
+      "manual_help_target": null,
+      "parked": false,
+      "plate": "DEMO 6210",
+      "rain_sensor_wet": false,
+      "restricted_zone": true,
+      "road_surface": "unknown",
+      "stationary_seconds": 180,
+      "unresponsive_test_signal": false,
+      "visibility_low": false,
+      "washer_active": false,
+      "wiper_high": false
+    },
+    "sample_hz": 20,
+    "samples": [
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.0,
+        "temperature_c": 22,
+        "vertical_g": -0.0064,
+        "voltage": 13.913
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.05,
+        "temperature_c": 22,
+        "vertical_g": -0.0057,
+        "voltage": 13.892
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.1,
+        "temperature_c": 22,
+        "vertical_g": -0.0233,
+        "voltage": 13.895
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0278,
+        "voltage": 13.911
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0259,
+        "voltage": 13.906
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0099,
+        "voltage": 13.905
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0417,
+        "voltage": 13.921
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0127,
+        "voltage": 13.912
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.4,
+        "temperature_c": 22,
+        "vertical_g": -0.0423,
+        "voltage": 13.856
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.45,
+        "temperature_c": 22,
+        "vertical_g": -0.0222,
+        "voltage": 13.888
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0076,
+        "voltage": 13.899
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.55,
+        "temperature_c": 22,
+        "vertical_g": 0.013,
+        "voltage": 13.884
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0077,
+        "voltage": 13.91
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.65,
+        "temperature_c": 22,
+        "vertical_g": -0.0165,
+        "voltage": 13.943
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0139,
+        "voltage": 13.93
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.75,
+        "temperature_c": 22,
+        "vertical_g": -0.0155,
+        "voltage": 13.882
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.8,
+        "temperature_c": 22,
+        "vertical_g": -0.0086,
+        "voltage": 13.897
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.85,
+        "temperature_c": 22,
+        "vertical_g": 0.0158,
+        "voltage": 13.906
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0112,
+        "voltage": 13.876
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 0.95,
+        "temperature_c": 22,
+        "vertical_g": -0.013,
+        "voltage": 13.931
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.0,
+        "temperature_c": 22,
+        "vertical_g": -0.0202,
+        "voltage": 13.906
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0107,
+        "voltage": 13.863
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.1,
+        "temperature_c": 22,
+        "vertical_g": 0.0012,
+        "voltage": 13.933
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.15,
+        "temperature_c": 22,
+        "vertical_g": -0.0504,
+        "voltage": 13.892
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.2,
+        "temperature_c": 22,
+        "vertical_g": -0.0027,
+        "voltage": 13.88
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0124,
+        "voltage": 13.898
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0366,
+        "voltage": 13.921
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0167,
+        "voltage": 13.924
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.4,
+        "temperature_c": 22,
+        "vertical_g": 0.036,
+        "voltage": 13.909
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.45,
+        "temperature_c": 22,
+        "vertical_g": 0.003,
+        "voltage": 13.868
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0154,
+        "voltage": 13.885
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0113,
+        "voltage": 13.868
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.6,
+        "temperature_c": 22,
+        "vertical_g": -0.0242,
+        "voltage": 13.887
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.65,
+        "temperature_c": 22,
+        "vertical_g": 0.0322,
+        "voltage": 13.849
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.7,
+        "temperature_c": 22,
+        "vertical_g": -0.0364,
+        "voltage": 13.906
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0361,
+        "voltage": 13.914
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.8,
+        "temperature_c": 22,
+        "vertical_g": -0.0475,
+        "voltage": 13.837
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.85,
+        "temperature_c": 22,
+        "vertical_g": 0.0089,
+        "voltage": 13.882
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.9,
+        "temperature_c": 22,
+        "vertical_g": -0.028,
+        "voltage": 13.924
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 1.95,
+        "temperature_c": 22,
+        "vertical_g": 0.0275,
+        "voltage": 13.904
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0061,
+        "voltage": 13.911
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0399,
+        "voltage": 13.915
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.1,
+        "temperature_c": 22,
+        "vertical_g": 0.013,
+        "voltage": 13.914
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.15,
+        "temperature_c": 22,
+        "vertical_g": -0.0392,
+        "voltage": 13.932
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0239,
+        "voltage": 13.913
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.25,
+        "temperature_c": 22,
+        "vertical_g": -0.0493,
+        "voltage": 13.884
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.3,
+        "temperature_c": 22,
+        "vertical_g": 0.0211,
+        "voltage": 13.855
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.35,
+        "temperature_c": 22,
+        "vertical_g": -0.0046,
+        "voltage": 13.925
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.4,
+        "temperature_c": 22,
+        "vertical_g": -0.0328,
+        "voltage": 13.94
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.45,
+        "temperature_c": 22,
+        "vertical_g": 0.0138,
+        "voltage": 13.896
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0081,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.55,
+        "temperature_c": 22,
+        "vertical_g": 0.003,
+        "voltage": 13.929
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.6,
+        "temperature_c": 22,
+        "vertical_g": -0.0165,
+        "voltage": 13.89
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.65,
+        "temperature_c": 22,
+        "vertical_g": 0.026,
+        "voltage": 13.901
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.7,
+        "temperature_c": 22,
+        "vertical_g": -0.022,
+        "voltage": 13.924
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0366,
+        "voltage": 13.889
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.8,
+        "temperature_c": 22,
+        "vertical_g": -0.0345,
+        "voltage": 13.897
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.85,
+        "temperature_c": 22,
+        "vertical_g": -0.0037,
+        "voltage": 13.893
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.9,
+        "temperature_c": 22,
+        "vertical_g": 0.0351,
+        "voltage": 13.874
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 2.95,
+        "temperature_c": 22,
+        "vertical_g": 0.0315,
+        "voltage": 13.868
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.0,
+        "temperature_c": 22,
+        "vertical_g": -0.0197,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0282,
+        "voltage": 13.921
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.1,
+        "temperature_c": 22,
+        "vertical_g": 0.0086,
+        "voltage": 13.904
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0038,
+        "voltage": 13.914
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.2,
+        "temperature_c": 22,
+        "vertical_g": -0.0044,
+        "voltage": 13.907
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0143,
+        "voltage": 13.9
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.3,
+        "temperature_c": 22,
+        "vertical_g": 0.0191,
+        "voltage": 13.914
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0503,
+        "voltage": 13.908
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.4,
+        "temperature_c": 22,
+        "vertical_g": -0.0107,
+        "voltage": 13.891
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.45,
+        "temperature_c": 22,
+        "vertical_g": -0.0003,
+        "voltage": 13.923
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0084,
+        "voltage": 13.91
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.55,
+        "temperature_c": 22,
+        "vertical_g": 0.0459,
+        "voltage": 13.836
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.6,
+        "temperature_c": 22,
+        "vertical_g": -0.0281,
+        "voltage": 13.906
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.65,
+        "temperature_c": 22,
+        "vertical_g": 0.01,
+        "voltage": 13.906
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.7,
+        "temperature_c": 22,
+        "vertical_g": -0.0108,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0071,
+        "voltage": 13.887
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.8,
+        "temperature_c": 22,
+        "vertical_g": 0.0608,
+        "voltage": 13.909
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.85,
+        "temperature_c": 22,
+        "vertical_g": -0.0139,
+        "voltage": 13.898
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0056,
+        "voltage": 13.898
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 3.95,
+        "temperature_c": 22,
+        "vertical_g": -0.0682,
+        "voltage": 13.888
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0252,
+        "voltage": 13.871
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.05,
+        "temperature_c": 22,
+        "vertical_g": -0.0017,
+        "voltage": 13.924
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.1,
+        "temperature_c": 22,
+        "vertical_g": 0.0214,
+        "voltage": 13.937
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.15,
+        "temperature_c": 22,
+        "vertical_g": -0.0425,
+        "voltage": 13.891
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.2,
+        "temperature_c": 22,
+        "vertical_g": -0.0085,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0273,
+        "voltage": 13.833
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.3,
+        "temperature_c": 22,
+        "vertical_g": 0.0272,
+        "voltage": 13.864
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0171,
+        "voltage": 13.863
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0044,
+        "voltage": 13.93
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.45,
+        "temperature_c": 22,
+        "vertical_g": -0.0037,
+        "voltage": 13.905
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0199,
+        "voltage": 13.904
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0022,
+        "voltage": 13.938
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0262,
+        "voltage": 13.893
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.65,
+        "temperature_c": 22,
+        "vertical_g": 0.0686,
+        "voltage": 13.871
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0229,
+        "voltage": 13.893
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0033,
+        "voltage": 13.918
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.8,
+        "temperature_c": 22,
+        "vertical_g": 0.0056,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.85,
+        "temperature_c": 22,
+        "vertical_g": -0.0382,
+        "voltage": 13.862
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.9,
+        "temperature_c": 22,
+        "vertical_g": 0.0154,
+        "voltage": 13.876
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 4.95,
+        "temperature_c": 22,
+        "vertical_g": -0.0257,
+        "voltage": 13.863
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0317,
+        "voltage": 13.919
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0368,
+        "voltage": 13.877
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.1,
+        "temperature_c": 22,
+        "vertical_g": 0.0,
+        "voltage": 13.871
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0192,
+        "voltage": 13.94
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.2,
+        "temperature_c": 22,
+        "vertical_g": -0.0223,
+        "voltage": 13.939
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0247,
+        "voltage": 13.896
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0493,
+        "voltage": 13.935
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.35,
+        "temperature_c": 22,
+        "vertical_g": -0.0024,
+        "voltage": 13.885
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.4,
+        "temperature_c": 22,
+        "vertical_g": 0.01,
+        "voltage": 13.91
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.45,
+        "temperature_c": 22,
+        "vertical_g": 0.0375,
+        "voltage": 13.874
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0284,
+        "voltage": 13.937
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.55,
+        "temperature_c": 22,
+        "vertical_g": 0.0363,
+        "voltage": 13.895
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.6,
+        "temperature_c": 22,
+        "vertical_g": -0.0186,
+        "voltage": 13.925
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.65,
+        "temperature_c": 22,
+        "vertical_g": 0.0029,
+        "voltage": 13.903
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0356,
+        "voltage": 13.893
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.75,
+        "temperature_c": 22,
+        "vertical_g": -0.0574,
+        "voltage": 13.89
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.8,
+        "temperature_c": 22,
+        "vertical_g": -0.0463,
+        "voltage": 13.92
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.85,
+        "temperature_c": 22,
+        "vertical_g": 0.0079,
+        "voltage": 13.885
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0002,
+        "voltage": 13.921
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 5.95,
+        "temperature_c": 22,
+        "vertical_g": 0.002,
+        "voltage": 13.933
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.0,
+        "temperature_c": 22,
+        "vertical_g": -0.0015,
+        "voltage": 13.926
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0373,
+        "voltage": 13.94
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.1,
+        "temperature_c": 22,
+        "vertical_g": -0.0168,
+        "voltage": 13.922
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.15,
+        "temperature_c": 22,
+        "vertical_g": -0.0469,
+        "voltage": 13.873
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.2,
+        "temperature_c": 22,
+        "vertical_g": -0.0491,
+        "voltage": 13.927
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.25,
+        "temperature_c": 22,
+        "vertical_g": -0.0308,
+        "voltage": 13.9
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0048,
+        "voltage": 13.899
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.35,
+        "temperature_c": 22,
+        "vertical_g": -0.0148,
+        "voltage": 13.906
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0448,
+        "voltage": 13.901
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.45,
+        "temperature_c": 22,
+        "vertical_g": 0.0133,
+        "voltage": 13.925
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0049,
+        "voltage": 13.869
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0139,
+        "voltage": 13.927
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.6,
+        "temperature_c": 22,
+        "vertical_g": -0.0412,
+        "voltage": 13.885
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.65,
+        "temperature_c": 22,
+        "vertical_g": 0.0252,
+        "voltage": 13.92
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0002,
+        "voltage": 13.92
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0041,
+        "voltage": 13.871
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.8,
+        "temperature_c": 22,
+        "vertical_g": -0.0391,
+        "voltage": 13.884
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.85,
+        "temperature_c": 22,
+        "vertical_g": 0.0231,
+        "voltage": 13.886
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0226,
+        "voltage": 13.881
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 6.95,
+        "temperature_c": 22,
+        "vertical_g": -0.0383,
+        "voltage": 13.897
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.0,
+        "temperature_c": 22,
+        "vertical_g": -0.0295,
+        "voltage": 13.909
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.05,
+        "temperature_c": 22,
+        "vertical_g": -0.059,
+        "voltage": 13.908
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.1,
+        "temperature_c": 22,
+        "vertical_g": -0.016,
+        "voltage": 13.851
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0181,
+        "voltage": 13.893
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.2,
+        "temperature_c": 22,
+        "vertical_g": -0.0558,
+        "voltage": 13.878
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0073,
+        "voltage": 13.889
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.3,
+        "temperature_c": 22,
+        "vertical_g": 0.0195,
+        "voltage": 13.919
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0167,
+        "voltage": 13.908
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0333,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.45,
+        "temperature_c": 22,
+        "vertical_g": 0.0113,
+        "voltage": 13.848
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0224,
+        "voltage": 13.933
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0074,
+        "voltage": 13.888
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0485,
+        "voltage": 13.856
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.65,
+        "temperature_c": 22,
+        "vertical_g": 0.0117,
+        "voltage": 13.961
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.7,
+        "temperature_c": 22,
+        "vertical_g": -0.0232,
+        "voltage": 13.917
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0472,
+        "voltage": 13.897
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.8,
+        "temperature_c": 22,
+        "vertical_g": 0.014,
+        "voltage": 13.923
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.85,
+        "temperature_c": 22,
+        "vertical_g": -0.0226,
+        "voltage": 13.898
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.9,
+        "temperature_c": 22,
+        "vertical_g": 0.0073,
+        "voltage": 13.921
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 7.95,
+        "temperature_c": 22,
+        "vertical_g": -0.0009,
+        "voltage": 13.895
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.0,
+        "temperature_c": 22,
+        "vertical_g": -0.0254,
+        "voltage": 13.891
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0223,
+        "voltage": 13.903
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.1,
+        "temperature_c": 22,
+        "vertical_g": -0.0213,
+        "voltage": 13.879
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0667,
+        "voltage": 13.928
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0159,
+        "voltage": 13.835
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0155,
+        "voltage": 13.912
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.3,
+        "temperature_c": 22,
+        "vertical_g": 0.0421,
+        "voltage": 13.911
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.35,
+        "temperature_c": 22,
+        "vertical_g": -0.0017,
+        "voltage": 13.913
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.4,
+        "temperature_c": 22,
+        "vertical_g": -0.0486,
+        "voltage": 13.926
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.45,
+        "temperature_c": 22,
+        "vertical_g": 0.0081,
+        "voltage": 13.882
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0331,
+        "voltage": 13.945
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0351,
+        "voltage": 13.883
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0073,
+        "voltage": 13.905
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.65,
+        "temperature_c": 22,
+        "vertical_g": -0.01,
+        "voltage": 13.876
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.7,
+        "temperature_c": 22,
+        "vertical_g": 0.053,
+        "voltage": 13.926
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.75,
+        "temperature_c": 22,
+        "vertical_g": -0.0299,
+        "voltage": 13.866
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.8,
+        "temperature_c": 22,
+        "vertical_g": 0.0426,
+        "voltage": 13.925
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.85,
+        "temperature_c": 22,
+        "vertical_g": 0.0455,
+        "voltage": 13.92
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0218,
+        "voltage": 13.907
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 8.95,
+        "temperature_c": 22,
+        "vertical_g": -0.054,
+        "voltage": 13.881
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.0,
+        "temperature_c": 22,
+        "vertical_g": -0.0015,
+        "voltage": 13.913
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.05,
+        "temperature_c": 22,
+        "vertical_g": -0.0182,
+        "voltage": 13.897
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.1,
+        "temperature_c": 22,
+        "vertical_g": 0.0115,
+        "voltage": 13.909
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0159,
+        "voltage": 13.905
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.2,
+        "temperature_c": 22,
+        "vertical_g": -0.0081,
+        "voltage": 13.92
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0012,
+        "voltage": 13.879
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0156,
+        "voltage": 13.9
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.35,
+        "temperature_c": 22,
+        "vertical_g": -0.0027,
+        "voltage": 13.904
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.4,
+        "temperature_c": 22,
+        "vertical_g": -0.0,
+        "voltage": 13.904
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.45,
+        "temperature_c": 22,
+        "vertical_g": -0.0034,
+        "voltage": 13.869
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0105,
+        "voltage": 13.926
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.55,
+        "temperature_c": 22,
+        "vertical_g": 0.0109,
+        "voltage": 13.895
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0112,
+        "voltage": 13.876
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.65,
+        "temperature_c": 22,
+        "vertical_g": -0.0474,
+        "voltage": 13.901
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.7,
+        "temperature_c": 22,
+        "vertical_g": -0.0233,
+        "voltage": 13.918
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.75,
+        "temperature_c": 22,
+        "vertical_g": -0.0271,
+        "voltage": 13.834
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.8,
+        "temperature_c": 22,
+        "vertical_g": -0.026,
+        "voltage": 13.939
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.85,
+        "temperature_c": 22,
+        "vertical_g": -0.0095,
+        "voltage": 13.866
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0191,
+        "voltage": 13.913
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 9.95,
+        "temperature_c": 22,
+        "vertical_g": 0.0124,
+        "voltage": 13.904
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0371,
+        "voltage": 13.918
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.05,
+        "temperature_c": 22,
+        "vertical_g": -0.0005,
+        "voltage": 13.915
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.1,
+        "temperature_c": 22,
+        "vertical_g": 0.0414,
+        "voltage": 13.924
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0256,
+        "voltage": 13.873
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.2,
+        "temperature_c": 22,
+        "vertical_g": -0.0037,
+        "voltage": 13.918
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.25,
+        "temperature_c": 22,
+        "vertical_g": -0.0074,
+        "voltage": 13.927
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.3,
+        "temperature_c": 22,
+        "vertical_g": 0.0149,
+        "voltage": 13.923
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.35,
+        "temperature_c": 22,
+        "vertical_g": -0.0053,
+        "voltage": 13.964
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.4,
+        "temperature_c": 22,
+        "vertical_g": 0.031,
+        "voltage": 13.895
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.45,
+        "temperature_c": 22,
+        "vertical_g": 0.0023,
+        "voltage": 13.965
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0086,
+        "voltage": 13.922
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.55,
+        "temperature_c": 22,
+        "vertical_g": 0.0245,
+        "voltage": 13.9
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.6,
+        "temperature_c": 22,
+        "vertical_g": -0.0292,
+        "voltage": 13.905
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.65,
+        "temperature_c": 22,
+        "vertical_g": 0.009,
+        "voltage": 13.928
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0196,
+        "voltage": 13.901
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0213,
+        "voltage": 13.913
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.8,
+        "temperature_c": 22,
+        "vertical_g": 0.0052,
+        "voltage": 13.901
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.85,
+        "temperature_c": 22,
+        "vertical_g": -0.0061,
+        "voltage": 13.917
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0264,
+        "voltage": 13.884
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 10.95,
+        "temperature_c": 22,
+        "vertical_g": 0.0001,
+        "voltage": 13.863
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.0,
+        "temperature_c": 22,
+        "vertical_g": -0.0109,
+        "voltage": 13.85
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.05,
+        "temperature_c": 22,
+        "vertical_g": -0.0171,
+        "voltage": 13.914
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.1,
+        "temperature_c": 22,
+        "vertical_g": 0.0142,
+        "voltage": 13.899
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.15,
+        "temperature_c": 22,
+        "vertical_g": -0.0058,
+        "voltage": 13.865
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0457,
+        "voltage": 13.913
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0273,
+        "voltage": 13.878
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0046,
+        "voltage": 13.855
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0195,
+        "voltage": 13.923
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.4,
+        "temperature_c": 22,
+        "vertical_g": -0.0474,
+        "voltage": 13.899
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.45,
+        "temperature_c": 22,
+        "vertical_g": 0.0158,
+        "voltage": 13.856
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0456,
+        "voltage": 13.873
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0157,
+        "voltage": 13.865
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0008,
+        "voltage": 13.906
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.65,
+        "temperature_c": 22,
+        "vertical_g": 0.0159,
+        "voltage": 13.918
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0376,
+        "voltage": 13.929
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.75,
+        "temperature_c": 22,
+        "vertical_g": -0.0328,
+        "voltage": 13.887
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.8,
+        "temperature_c": 22,
+        "vertical_g": -0.0265,
+        "voltage": 13.873
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.85,
+        "temperature_c": 22,
+        "vertical_g": -0.002,
+        "voltage": 13.9
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.9,
+        "temperature_c": 22,
+        "vertical_g": 0.0123,
+        "voltage": 13.86
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 11.95,
+        "temperature_c": 22,
+        "vertical_g": -0.0309,
+        "voltage": 13.899
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.0,
+        "temperature_c": 22,
+        "vertical_g": -0.005,
+        "voltage": 13.892
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.05,
+        "temperature_c": 22,
+        "vertical_g": -0.0016,
+        "voltage": 13.881
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.1,
+        "temperature_c": 22,
+        "vertical_g": 0.0175,
+        "voltage": 13.909
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.15,
+        "temperature_c": 22,
+        "vertical_g": -0.0022,
+        "voltage": 13.883
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.2,
+        "temperature_c": 22,
+        "vertical_g": -0.0044,
+        "voltage": 13.832
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.25,
+        "temperature_c": 22,
+        "vertical_g": -0.0245,
+        "voltage": 13.901
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0376,
+        "voltage": 13.905
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0037,
+        "voltage": 13.866
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.4,
+        "temperature_c": 22,
+        "vertical_g": -0.0063,
+        "voltage": 13.892
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.45,
+        "temperature_c": 22,
+        "vertical_g": 0.0115,
+        "voltage": 13.915
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0009,
+        "voltage": 13.879
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0036,
+        "voltage": 13.898
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0184,
+        "voltage": 13.907
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.65,
+        "temperature_c": 22,
+        "vertical_g": -0.0181,
+        "voltage": 13.866
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.7,
+        "temperature_c": 22,
+        "vertical_g": -0.0093,
+        "voltage": 13.881
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.75,
+        "temperature_c": 22,
+        "vertical_g": -0.0278,
+        "voltage": 13.897
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.8,
+        "temperature_c": 22,
+        "vertical_g": -0.0123,
+        "voltage": 13.903
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.85,
+        "temperature_c": 22,
+        "vertical_g": 0.0131,
+        "voltage": 13.89
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.9,
+        "temperature_c": 22,
+        "vertical_g": 0.0581,
+        "voltage": 13.892
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 12.95,
+        "temperature_c": 22,
+        "vertical_g": 0.0275,
+        "voltage": 13.903
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0279,
+        "voltage": 13.841
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.05,
+        "temperature_c": 22,
+        "vertical_g": -0.0188,
+        "voltage": 13.906
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.1,
+        "temperature_c": 22,
+        "vertical_g": 0.0151,
+        "voltage": 13.958
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0081,
+        "voltage": 13.932
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0192,
+        "voltage": 13.924
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0128,
+        "voltage": 13.896
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.3,
+        "temperature_c": 22,
+        "vertical_g": 0.0127,
+        "voltage": 13.873
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0295,
+        "voltage": 13.875
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0062,
+        "voltage": 13.953
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.45,
+        "temperature_c": 22,
+        "vertical_g": -0.0056,
+        "voltage": 13.9
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0291,
+        "voltage": 13.901
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0202,
+        "voltage": 13.906
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0146,
+        "voltage": 13.918
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.65,
+        "temperature_c": 22,
+        "vertical_g": -0.0193,
+        "voltage": 13.944
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0417,
+        "voltage": 13.9
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0067,
+        "voltage": 13.889
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.8,
+        "temperature_c": 22,
+        "vertical_g": 0.0354,
+        "voltage": 13.882
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.85,
+        "temperature_c": 22,
+        "vertical_g": 0.0169,
+        "voltage": 13.888
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0174,
+        "voltage": 13.918
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 13.95,
+        "temperature_c": 22,
+        "vertical_g": 0.0333,
+        "voltage": 13.9
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.0,
+        "temperature_c": 22,
+        "vertical_g": -0.0169,
+        "voltage": 13.92
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.05,
+        "temperature_c": 22,
+        "vertical_g": -0.0012,
+        "voltage": 13.908
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.1,
+        "temperature_c": 22,
+        "vertical_g": 0.0381,
+        "voltage": 13.928
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.15,
+        "temperature_c": 22,
+        "vertical_g": -0.013,
+        "voltage": 13.957
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0001,
+        "voltage": 13.92
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.25,
+        "temperature_c": 22,
+        "vertical_g": -0.0162,
+        "voltage": 13.899
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0437,
+        "voltage": 13.945
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0341,
+        "voltage": 13.87
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.4,
+        "temperature_c": 22,
+        "vertical_g": -0.0376,
+        "voltage": 13.859
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.45,
+        "temperature_c": 22,
+        "vertical_g": 0.0294,
+        "voltage": 13.889
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0015,
+        "voltage": 13.892
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.55,
+        "temperature_c": 22,
+        "vertical_g": -0.003,
+        "voltage": 13.873
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0006,
+        "voltage": 13.864
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.65,
+        "temperature_c": 22,
+        "vertical_g": -0.0018,
+        "voltage": 13.908
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0117,
+        "voltage": 13.894
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.75,
+        "temperature_c": 22,
+        "vertical_g": -0.0226,
+        "voltage": 13.904
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.8,
+        "temperature_c": 22,
+        "vertical_g": -0.0121,
+        "voltage": 13.939
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.85,
+        "temperature_c": 22,
+        "vertical_g": 0.0192,
+        "voltage": 13.897
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0118,
+        "voltage": 13.882
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 14.95,
+        "temperature_c": 22,
+        "vertical_g": -0.0234,
+        "voltage": 13.891
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0074,
+        "voltage": 13.913
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0142,
+        "voltage": 13.952
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.1,
+        "temperature_c": 22,
+        "vertical_g": -0.0176,
+        "voltage": 13.9
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0699,
+        "voltage": 13.853
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.2,
+        "temperature_c": 22,
+        "vertical_g": -0.013,
+        "voltage": 13.904
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0039,
+        "voltage": 13.91
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.3,
+        "temperature_c": 22,
+        "vertical_g": -0.006,
+        "voltage": 13.909
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0013,
+        "voltage": 13.919
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.4,
+        "temperature_c": 22,
+        "vertical_g": -0.0473,
+        "voltage": 13.878
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.45,
+        "temperature_c": 22,
+        "vertical_g": -0.0001,
+        "voltage": 13.874
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0261,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0162,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0186,
+        "voltage": 13.908
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.65,
+        "temperature_c": 22,
+        "vertical_g": 0.0127,
+        "voltage": 13.897
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.7,
+        "temperature_c": 22,
+        "vertical_g": -0.0352,
+        "voltage": 13.899
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0114,
+        "voltage": 13.887
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.8,
+        "temperature_c": 22,
+        "vertical_g": -0.0025,
+        "voltage": 13.919
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.85,
+        "temperature_c": 22,
+        "vertical_g": -0.022,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.9,
+        "temperature_c": 22,
+        "vertical_g": 0.0466,
+        "voltage": 13.886
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 15.95,
+        "temperature_c": 22,
+        "vertical_g": 0.0037,
+        "voltage": 13.896
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0385,
+        "voltage": 13.908
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0224,
+        "voltage": 13.883
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.1,
+        "temperature_c": 22,
+        "vertical_g": -0.0004,
+        "voltage": 13.9
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.15,
+        "temperature_c": 22,
+        "vertical_g": -0.0444,
+        "voltage": 13.936
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0225,
+        "voltage": 13.856
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0186,
+        "voltage": 13.897
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.3,
+        "temperature_c": 22,
+        "vertical_g": 0.0112,
+        "voltage": 13.909
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.35,
+        "temperature_c": 22,
+        "vertical_g": -0.0375,
+        "voltage": 13.895
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0373,
+        "voltage": 13.886
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.45,
+        "temperature_c": 22,
+        "vertical_g": -0.0256,
+        "voltage": 13.866
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0305,
+        "voltage": 13.908
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.55,
+        "temperature_c": 22,
+        "vertical_g": 0.0423,
+        "voltage": 13.911
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0061,
+        "voltage": 13.956
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.65,
+        "temperature_c": 22,
+        "vertical_g": -0.013,
+        "voltage": 13.883
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0132,
+        "voltage": 13.914
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.75,
+        "temperature_c": 22,
+        "vertical_g": -0.0254,
+        "voltage": 13.871
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.8,
+        "temperature_c": 22,
+        "vertical_g": 0.0073,
+        "voltage": 13.906
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.85,
+        "temperature_c": 22,
+        "vertical_g": -0.0327,
+        "voltage": 13.895
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0136,
+        "voltage": 13.912
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 16.95,
+        "temperature_c": 22,
+        "vertical_g": -0.0029,
+        "voltage": 13.898
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.0,
+        "temperature_c": 22,
+        "vertical_g": -0.0088,
+        "voltage": 13.926
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0348,
+        "voltage": 13.891
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.1,
+        "temperature_c": 22,
+        "vertical_g": 0.0212,
+        "voltage": 13.881
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0018,
+        "voltage": 13.919
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0379,
+        "voltage": 13.89
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.25,
+        "temperature_c": 22,
+        "vertical_g": -0.0019,
+        "voltage": 13.905
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0375,
+        "voltage": 13.9
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.35,
+        "temperature_c": 22,
+        "vertical_g": -0.0169,
+        "voltage": 13.909
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.4,
+        "temperature_c": 22,
+        "vertical_g": -0.0282,
+        "voltage": 13.851
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.45,
+        "temperature_c": 22,
+        "vertical_g": 0.001,
+        "voltage": 13.907
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0137,
+        "voltage": 13.922
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0068,
+        "voltage": 13.885
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0119,
+        "voltage": 13.861
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.65,
+        "temperature_c": 22,
+        "vertical_g": -0.0169,
+        "voltage": 13.899
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0212,
+        "voltage": 13.896
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0077,
+        "voltage": 13.884
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.8,
+        "temperature_c": 22,
+        "vertical_g": 0.0075,
+        "voltage": 13.942
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.85,
+        "temperature_c": 22,
+        "vertical_g": -0.0172,
+        "voltage": 13.959
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0161,
+        "voltage": 13.9
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 17.95,
+        "temperature_c": 22,
+        "vertical_g": 0.0043,
+        "voltage": 13.926
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.0,
+        "temperature_c": 22,
+        "vertical_g": -0.0309,
+        "voltage": 13.847
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0152,
+        "voltage": 13.92
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.1,
+        "temperature_c": 22,
+        "vertical_g": 0.0156,
+        "voltage": 13.966
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0051,
+        "voltage": 13.906
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0232,
+        "voltage": 13.909
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0416,
+        "voltage": 13.869
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0094,
+        "voltage": 13.814
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0203,
+        "voltage": 13.891
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0231,
+        "voltage": 13.954
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.45,
+        "temperature_c": 22,
+        "vertical_g": -0.0001,
+        "voltage": 13.894
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0125,
+        "voltage": 13.879
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0158,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0009,
+        "voltage": 13.902
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.65,
+        "temperature_c": 22,
+        "vertical_g": -0.0043,
+        "voltage": 13.923
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0123,
+        "voltage": 13.896
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0166,
+        "voltage": 13.896
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.8,
+        "temperature_c": 22,
+        "vertical_g": -0.0288,
+        "voltage": 13.936
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.85,
+        "temperature_c": 22,
+        "vertical_g": 0.0116,
+        "voltage": 13.876
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.9,
+        "temperature_c": 22,
+        "vertical_g": 0.027,
+        "voltage": 13.909
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 18.95,
+        "temperature_c": 22,
+        "vertical_g": -0.0391,
+        "voltage": 13.94
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0083,
+        "voltage": 13.922
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0049,
+        "voltage": 13.896
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.1,
+        "temperature_c": 22,
+        "vertical_g": -0.0387,
+        "voltage": 13.924
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0008,
+        "voltage": 13.893
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0088,
+        "voltage": 13.902
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0169,
+        "voltage": 13.891
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0009,
+        "voltage": 13.847
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.35,
+        "temperature_c": 22,
+        "vertical_g": -0.0106,
+        "voltage": 13.917
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0334,
+        "voltage": 13.891
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.45,
+        "temperature_c": 22,
+        "vertical_g": -0.003,
+        "voltage": 13.94
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0081,
+        "voltage": 13.918
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.55,
+        "temperature_c": 22,
+        "vertical_g": 0.042,
+        "voltage": 13.901
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0307,
+        "voltage": 13.882
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.65,
+        "temperature_c": 22,
+        "vertical_g": 0.0052,
+        "voltage": 13.898
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0029,
+        "voltage": 13.928
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0597,
+        "voltage": 13.883
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.8,
+        "temperature_c": 22,
+        "vertical_g": -0.0144,
+        "voltage": 13.912
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.85,
+        "temperature_c": 22,
+        "vertical_g": -0.0264,
+        "voltage": 13.912
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.9,
+        "temperature_c": 22,
+        "vertical_g": 0.0143,
+        "voltage": 13.893
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 19.95,
+        "temperature_c": 22,
+        "vertical_g": 0.0133,
+        "voltage": 13.861
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.0,
+        "temperature_c": 22,
+        "vertical_g": 0.019,
+        "voltage": 13.861
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.05,
+        "temperature_c": 22,
+        "vertical_g": -0.0174,
+        "voltage": 13.886
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.1,
+        "temperature_c": 22,
+        "vertical_g": -0.01,
+        "voltage": 13.921
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.15,
+        "temperature_c": 22,
+        "vertical_g": 0.002,
+        "voltage": 13.89
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0136,
+        "voltage": 13.94
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0002,
+        "voltage": 13.909
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.3,
+        "temperature_c": 22,
+        "vertical_g": 0.031,
+        "voltage": 13.907
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.35,
+        "temperature_c": 22,
+        "vertical_g": -0.0321,
+        "voltage": 13.962
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0552,
+        "voltage": 13.85
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.45,
+        "temperature_c": 22,
+        "vertical_g": -0.001,
+        "voltage": 13.91
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0241,
+        "voltage": 13.917
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0068,
+        "voltage": 13.874
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0026,
+        "voltage": 13.926
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.65,
+        "temperature_c": 22,
+        "vertical_g": -0.0272,
+        "voltage": 13.874
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.7,
+        "temperature_c": 22,
+        "vertical_g": -0.0006,
+        "voltage": 13.852
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.75,
+        "temperature_c": 22,
+        "vertical_g": -0.0065,
+        "voltage": 13.889
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.8,
+        "temperature_c": 22,
+        "vertical_g": 0.0113,
+        "voltage": 13.882
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.85,
+        "temperature_c": 22,
+        "vertical_g": -0.0221,
+        "voltage": 13.89
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0012,
+        "voltage": 13.883
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 20.95,
+        "temperature_c": 22,
+        "vertical_g": 0.0003,
+        "voltage": 13.919
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0296,
+        "voltage": 13.943
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.05,
+        "temperature_c": 22,
+        "vertical_g": -0.0196,
+        "voltage": 13.89
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.1,
+        "temperature_c": 22,
+        "vertical_g": -0.0621,
+        "voltage": 13.947
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.15,
+        "temperature_c": 22,
+        "vertical_g": -0.0181,
+        "voltage": 13.899
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0131,
+        "voltage": 13.866
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0116,
+        "voltage": 13.899
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0457,
+        "voltage": 13.907
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0299,
+        "voltage": 13.853
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0202,
+        "voltage": 13.905
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.45,
+        "temperature_c": 22,
+        "vertical_g": 0.0119,
+        "voltage": 13.911
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0326,
+        "voltage": 13.894
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.55,
+        "temperature_c": 22,
+        "vertical_g": 0.0218,
+        "voltage": 13.89
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0182,
+        "voltage": 13.88
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.65,
+        "temperature_c": 22,
+        "vertical_g": -0.0027,
+        "voltage": 13.943
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0111,
+        "voltage": 13.896
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.75,
+        "temperature_c": 22,
+        "vertical_g": -0.0286,
+        "voltage": 13.88
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.8,
+        "temperature_c": 22,
+        "vertical_g": 0.0048,
+        "voltage": 13.923
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.85,
+        "temperature_c": 22,
+        "vertical_g": 0.0107,
+        "voltage": 13.913
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.9,
+        "temperature_c": 22,
+        "vertical_g": -0.001,
+        "voltage": 13.934
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 21.95,
+        "temperature_c": 22,
+        "vertical_g": -0.0098,
+        "voltage": 13.886
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0222,
+        "voltage": 13.902
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.05,
+        "temperature_c": 22,
+        "vertical_g": -0.007,
+        "voltage": 13.886
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.1,
+        "temperature_c": 22,
+        "vertical_g": -0.0064,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0088,
+        "voltage": 13.87
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0107,
+        "voltage": 13.904
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.25,
+        "temperature_c": 22,
+        "vertical_g": -0.025,
+        "voltage": 13.919
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.3,
+        "temperature_c": 22,
+        "vertical_g": -0.007,
+        "voltage": 13.892
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0199,
+        "voltage": 13.933
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.4,
+        "temperature_c": 22,
+        "vertical_g": -0.0172,
+        "voltage": 13.911
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.45,
+        "temperature_c": 22,
+        "vertical_g": -0.0219,
+        "voltage": 13.958
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0123,
+        "voltage": 13.93
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0162,
+        "voltage": 13.92
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0555,
+        "voltage": 13.836
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.65,
+        "temperature_c": 22,
+        "vertical_g": -0.0109,
+        "voltage": 13.913
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.7,
+        "temperature_c": 22,
+        "vertical_g": -0.0023,
+        "voltage": 13.883
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0538,
+        "voltage": 13.902
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.8,
+        "temperature_c": 22,
+        "vertical_g": -0.0411,
+        "voltage": 13.921
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.85,
+        "temperature_c": 22,
+        "vertical_g": -0.043,
+        "voltage": 13.929
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0144,
+        "voltage": 13.904
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 22.95,
+        "temperature_c": 22,
+        "vertical_g": 0.0315,
+        "voltage": 13.903
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.0,
+        "temperature_c": 22,
+        "vertical_g": -0.0348,
+        "voltage": 13.858
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0296,
+        "voltage": 13.919
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.1,
+        "temperature_c": 22,
+        "vertical_g": -0.0204,
+        "voltage": 13.921
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0124,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.2,
+        "temperature_c": 22,
+        "vertical_g": -0.0565,
+        "voltage": 13.892
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0225,
+        "voltage": 13.918
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.3,
+        "temperature_c": 22,
+        "vertical_g": 0.022,
+        "voltage": 13.839
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0042,
+        "voltage": 13.912
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0638,
+        "voltage": 13.876
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.45,
+        "temperature_c": 22,
+        "vertical_g": -0.0082,
+        "voltage": 13.901
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0222,
+        "voltage": 13.889
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.55,
+        "temperature_c": 22,
+        "vertical_g": 0.0287,
+        "voltage": 13.88
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0067,
+        "voltage": 13.887
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.65,
+        "temperature_c": 22,
+        "vertical_g": 0.004,
+        "voltage": 13.883
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.7,
+        "temperature_c": 22,
+        "vertical_g": -0.0399,
+        "voltage": 13.927
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0076,
+        "voltage": 13.886
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.8,
+        "temperature_c": 22,
+        "vertical_g": 0.005,
+        "voltage": 13.925
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.85,
+        "temperature_c": 22,
+        "vertical_g": -0.0244,
+        "voltage": 13.897
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.9,
+        "temperature_c": 22,
+        "vertical_g": 0.0135,
+        "voltage": 13.913
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 23.95,
+        "temperature_c": 22,
+        "vertical_g": -0.0084,
+        "voltage": 13.847
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0311,
+        "voltage": 13.908
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0003,
+        "voltage": 13.893
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.1,
+        "temperature_c": 22,
+        "vertical_g": 0.0066,
+        "voltage": 13.889
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.15,
+        "temperature_c": 22,
+        "vertical_g": -0.0256,
+        "voltage": 13.882
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.2,
+        "temperature_c": 22,
+        "vertical_g": -0.0149,
+        "voltage": 13.885
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.25,
+        "temperature_c": 22,
+        "vertical_g": -0.029,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0327,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.35,
+        "temperature_c": 22,
+        "vertical_g": -0.0254,
+        "voltage": 13.909
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0344,
+        "voltage": 13.905
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.45,
+        "temperature_c": 22,
+        "vertical_g": -0.0183,
+        "voltage": 13.901
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0037,
+        "voltage": 13.857
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0152,
+        "voltage": 13.904
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.6,
+        "temperature_c": 22,
+        "vertical_g": -0.0117,
+        "voltage": 13.902
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.65,
+        "temperature_c": 22,
+        "vertical_g": 0.0183,
+        "voltage": 13.919
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0226,
+        "voltage": 13.915
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.75,
+        "temperature_c": 22,
+        "vertical_g": -0.0072,
+        "voltage": 13.9
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.8,
+        "temperature_c": 22,
+        "vertical_g": -0.0068,
+        "voltage": 13.892
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.85,
+        "temperature_c": 22,
+        "vertical_g": -0.0045,
+        "voltage": 13.857
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0083,
+        "voltage": 13.899
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 24.95,
+        "temperature_c": 22,
+        "vertical_g": -0.0243,
+        "voltage": 13.899
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0129,
+        "voltage": 13.896
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0519,
+        "voltage": 13.835
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.1,
+        "temperature_c": 22,
+        "vertical_g": -0.0052,
+        "voltage": 13.854
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0245,
+        "voltage": 13.966
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.2,
+        "temperature_c": 22,
+        "vertical_g": -0.0626,
+        "voltage": 13.903
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.25,
+        "temperature_c": 22,
+        "vertical_g": 0.013,
+        "voltage": 13.892
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.3,
+        "temperature_c": 22,
+        "vertical_g": 0.0138,
+        "voltage": 13.844
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0213,
+        "voltage": 13.909
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0006,
+        "voltage": 13.885
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.45,
+        "temperature_c": 22,
+        "vertical_g": 0.016,
+        "voltage": 13.888
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0056,
+        "voltage": 13.887
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0562,
+        "voltage": 13.899
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0051,
+        "voltage": 13.919
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.65,
+        "temperature_c": 22,
+        "vertical_g": -0.0219,
+        "voltage": 13.899
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.7,
+        "temperature_c": 22,
+        "vertical_g": 0.0154,
+        "voltage": 13.904
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0311,
+        "voltage": 13.95
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.8,
+        "temperature_c": 22,
+        "vertical_g": -0.0227,
+        "voltage": 13.852
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.85,
+        "temperature_c": 22,
+        "vertical_g": 0.0214,
+        "voltage": 13.938
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.9,
+        "temperature_c": 22,
+        "vertical_g": 0.0231,
+        "voltage": 13.92
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 25.95,
+        "temperature_c": 22,
+        "vertical_g": -0.0155,
+        "voltage": 13.882
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0222,
+        "voltage": 13.877
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.05,
+        "temperature_c": 22,
+        "vertical_g": -0.0453,
+        "voltage": 13.875
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.1,
+        "temperature_c": 22,
+        "vertical_g": 0.0623,
+        "voltage": 13.948
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.15,
+        "temperature_c": 22,
+        "vertical_g": -0.0172,
+        "voltage": 13.882
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0058,
+        "voltage": 13.881
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0328,
+        "voltage": 13.898
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0272,
+        "voltage": 13.933
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.35,
+        "temperature_c": 22,
+        "vertical_g": -0.0146,
+        "voltage": 13.906
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.4,
+        "temperature_c": 22,
+        "vertical_g": -0.0003,
+        "voltage": 13.892
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.45,
+        "temperature_c": 22,
+        "vertical_g": 0.0081,
+        "voltage": 13.883
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0461,
+        "voltage": 13.845
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0317,
+        "voltage": 13.881
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.6,
+        "temperature_c": 22,
+        "vertical_g": -0.0006,
+        "voltage": 13.901
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.65,
+        "temperature_c": 22,
+        "vertical_g": 0.0139,
+        "voltage": 13.903
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.7,
+        "temperature_c": 22,
+        "vertical_g": -0.0198,
+        "voltage": 13.882
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.75,
+        "temperature_c": 22,
+        "vertical_g": -0.053,
+        "voltage": 13.896
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.8,
+        "temperature_c": 22,
+        "vertical_g": 0.0121,
+        "voltage": 13.913
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.85,
+        "temperature_c": 22,
+        "vertical_g": -0.003,
+        "voltage": 13.896
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.9,
+        "temperature_c": 22,
+        "vertical_g": 0.0234,
+        "voltage": 13.9
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 26.95,
+        "temperature_c": 22,
+        "vertical_g": 0.0184,
+        "voltage": 13.915
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0053,
+        "voltage": 13.933
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.05,
+        "temperature_c": 22,
+        "vertical_g": -0.0143,
+        "voltage": 13.891
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.1,
+        "temperature_c": 22,
+        "vertical_g": -0.0202,
+        "voltage": 13.88
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0389,
+        "voltage": 13.944
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0006,
+        "voltage": 13.914
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.25,
+        "temperature_c": 22,
+        "vertical_g": 0.0294,
+        "voltage": 13.92
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.3,
+        "temperature_c": 22,
+        "vertical_g": 0.0301,
+        "voltage": 13.868
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.35,
+        "temperature_c": 22,
+        "vertical_g": -0.016,
+        "voltage": 13.911
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0359,
+        "voltage": 13.903
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.45,
+        "temperature_c": 22,
+        "vertical_g": -0.0215,
+        "voltage": 13.891
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0165,
+        "voltage": 13.879
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.55,
+        "temperature_c": 22,
+        "vertical_g": 0.0375,
+        "voltage": 13.884
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.6,
+        "temperature_c": 22,
+        "vertical_g": 0.0005,
+        "voltage": 13.954
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.65,
+        "temperature_c": 22,
+        "vertical_g": 0.0296,
+        "voltage": 13.908
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.7,
+        "temperature_c": 22,
+        "vertical_g": -0.0153,
+        "voltage": 13.91
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0405,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.8,
+        "temperature_c": 22,
+        "vertical_g": 0.0315,
+        "voltage": 13.902
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.85,
+        "temperature_c": 22,
+        "vertical_g": 0.0129,
+        "voltage": 13.895
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.9,
+        "temperature_c": 22,
+        "vertical_g": 0.0107,
+        "voltage": 13.933
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 27.95,
+        "temperature_c": 22,
+        "vertical_g": -0.0358,
+        "voltage": 13.898
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.0,
+        "temperature_c": 22,
+        "vertical_g": 0.006,
+        "voltage": 13.886
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.05,
+        "temperature_c": 22,
+        "vertical_g": -0.0077,
+        "voltage": 13.92
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.1,
+        "temperature_c": 22,
+        "vertical_g": 0.05,
+        "voltage": 13.916
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.15,
+        "temperature_c": 22,
+        "vertical_g": 0.0082,
+        "voltage": 13.861
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.2,
+        "temperature_c": 22,
+        "vertical_g": 0.0482,
+        "voltage": 13.902
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.25,
+        "temperature_c": 22,
+        "vertical_g": -0.0008,
+        "voltage": 13.872
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0014,
+        "voltage": 13.873
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.35,
+        "temperature_c": 22,
+        "vertical_g": 0.0018,
+        "voltage": 13.912
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0008,
+        "voltage": 13.907
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.45,
+        "temperature_c": 22,
+        "vertical_g": -0.0213,
+        "voltage": 13.936
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.5,
+        "temperature_c": 22,
+        "vertical_g": -0.0163,
+        "voltage": 13.855
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.55,
+        "temperature_c": 22,
+        "vertical_g": -0.0047,
+        "voltage": 13.881
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.6,
+        "temperature_c": 22,
+        "vertical_g": -0.0252,
+        "voltage": 13.891
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.65,
+        "temperature_c": 22,
+        "vertical_g": 0.0073,
+        "voltage": 13.87
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.7,
+        "temperature_c": 22,
+        "vertical_g": -0.0034,
+        "voltage": 13.936
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.75,
+        "temperature_c": 22,
+        "vertical_g": 0.0171,
+        "voltage": 13.896
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.8,
+        "temperature_c": 22,
+        "vertical_g": 0.0032,
+        "voltage": 13.897
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.85,
+        "temperature_c": 22,
+        "vertical_g": -0.0012,
+        "voltage": 13.918
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.9,
+        "temperature_c": 22,
+        "vertical_g": -0.0023,
+        "voltage": 13.84
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 28.95,
+        "temperature_c": 22,
+        "vertical_g": -0.0005,
+        "voltage": 13.878
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.0,
+        "temperature_c": 22,
+        "vertical_g": 0.0163,
+        "voltage": 13.885
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.05,
+        "temperature_c": 22,
+        "vertical_g": 0.0037,
+        "voltage": 13.954
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.1,
+        "temperature_c": 22,
+        "vertical_g": -0.0262,
+        "voltage": 13.872
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.15,
+        "temperature_c": 22,
+        "vertical_g": -0.0353,
+        "voltage": 13.84
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.2,
+        "temperature_c": 22,
+        "vertical_g": -0.047,
+        "voltage": 13.909
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.25,
+        "temperature_c": 22,
+        "vertical_g": -0.016,
+        "voltage": 13.853
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.3,
+        "temperature_c": 22,
+        "vertical_g": -0.0371,
+        "voltage": 13.915
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.35,
+        "temperature_c": 22,
+        "vertical_g": -0.0194,
+        "voltage": 13.891
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.4,
+        "temperature_c": 22,
+        "vertical_g": 0.0083,
+        "voltage": 13.934
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.45,
+        "temperature_c": 22,
+        "vertical_g": 0.0485,
+        "voltage": 13.926
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.5,
+        "temperature_c": 22,
+        "vertical_g": 0.0036,
+        "voltage": 13.905
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.55,
+        "temperature_c": 22,
+        "vertical_g": 0.0451,
+        "voltage": 13.936
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.6,
+        "temperature_c": 22,
+        "vertical_g": -0.0078,
+        "voltage": 13.911
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.65,
+        "temperature_c": 22,
+        "vertical_g": 0.0072,
+        "voltage": 13.901
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.7,
+        "temperature_c": 22,
+        "vertical_g": -0.0125,
+        "voltage": 13.867
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.75,
+        "temperature_c": 22,
+        "vertical_g": -0.0134,
+        "voltage": 13.861
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.8,
+        "temperature_c": 22,
+        "vertical_g": 0.0306,
+        "voltage": 13.913
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.85,
+        "temperature_c": 22,
+        "vertical_g": -0.0301,
+        "voltage": 13.935
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.9,
+        "temperature_c": 22,
+        "vertical_g": 0.0223,
+        "voltage": 13.852
+      },
+      {
+        "rpm": 1200,
+        "speed_kph": 42,
+        "t": 29.95,
+        "temperature_c": 22,
+        "vertical_g": 0.046,
+        "voltage": 13.92
+      }
+    ],
+    "scenario": "violation",
+    "schema": "road-guardian.input.v1",
+    "seed": 7,
+    "source": "synthetic",
+    "units": {
+      "rpm": "rpm",
+      "vertical_g": "g, gravity removed",
+      "voltage": "V"
+    },
+    "vehicle_id": "demo-hyundai-01"
+  },
+  "road_expires_at": null,
+  "video": null,
+  "history": [
+    {
+      "seq": 1,
+      "event_id": "5bd23770-56d8-453b-b25d-ce36a61c62d9",
+      "at": 1792804402.747553,
+      "action": "created",
+      "detail": "{\"source\":\"synthetic\"}"
+    }
+  ],
+  "dispatches": [],
+  "repair": null,
+  "diagnostic_valid": true,
+  "insurance_case": null,
+  "repair_case": null,
+  "road_evidence_review": null,
+  "road_followup_case": null,
+  "case_overview": null,
+  "evidence_dossier": null,
+  "traffic_review": {
+    "schema": "road-guardian.traffic-review.v1",
+    "kind": "violation",
+    "source": "synthetic",
+    "verdict_verified": false,
+    "recognition_performed": false,
+    "external_submission": false,
+    "stage": "synthetic_review",
+    "subject": {
+      "plate": "DEMO 6210",
+      "model": "스타리아",
+      "color": "검정"
+    },
+    "stationary_seconds": 180,
+    "fixture_flag": true
+  }
+}
