@@ -8,7 +8,7 @@ R은 포트홀, 주차 중 충격, 사고 같은 차량 사건이 생기면 당�
 
 ## APK
 
-APK는 [GitHub Releases](../../releases)에 올려 두었습니다.
+APK는 [GitHub Releases](../../releases)에 올려 두었습니다. 차량 APK가 100MB를 넘어 저장소에는 넣지 않았습니다.
 
 | 파일 | 내용 | 넣을 위치 |
 |---|---|---|
@@ -20,6 +20,7 @@ APK는 [GitHub Releases](../../releases)에 올려 두었습니다.
 | 항목 | 버전 |
 |---|---|
 | 차량 에뮬레이터 | Pleos Connect Emulator v2.1.0 (Android 14, API 34) |
+| 휴대폰 에뮬레이터 | Android Studio 기본 Medium Phone (API 37) |
 | 빌드 | Android Studio, JDK 17, Android SDK 35 |
 | 시연 스크립트 | Python 3.11 이상(3.14.6에서 확인), ADB, FFmpeg |
 
@@ -64,8 +65,14 @@ python3 phone/parking_phone.py --serial emulator-5556 --install --allow-notifica
 ./gradlew :app:assembleDebug -ProadGuardianDebugManifest=phone/PhoneManifest.xml
 ```
 
-- release 빌드에는 서명 설정이 들어 있지 않습니다. 설치하려면 직접 만든 키로 서명합니다.
+- release 빌드에는 서명 설정이 없습니다. Releases의 차량 APK는 팀 키로 서명했습니다. 직접 빌드하면 아래처럼 자신의 키로 서명합니다.
+- 다른 키로 서명한 APK가 이미 설치돼 있으면 `adb uninstall --user 10 ai.teraq.roadguardian.contest.release`로 지운 뒤 설치합니다.
 - Windows에서는 경로에 한글이 있으면 빌드가 멈출 수 있으니 영문 경로에서 빌드합니다.
+
+```sh
+apksigner sign --ks 내_키.jks --out apk/모션노트_R_release.apk \
+  src/ui/android/build/outputs/apk/contestRelease/app-contestRelease-unsigned.apk
+```
 
 ## 사용한 차량 API
 
