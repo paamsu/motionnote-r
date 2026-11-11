@@ -19,7 +19,8 @@ APK는 [GitHub Releases](../../releases)에 올려 두었습니다. 차량 APK�
 
 | 항목 | 버전 |
 |---|---|
-| 차량 에뮬레이터 | Pleos Connect Emulator v2.1.0 (Android 14, API 34) |
+| 차량 에뮬레이터 | Pleos Connect Emulator v2.1.0 (Android 14, API 34, x86_64) |
+| 차량 화면 규격 | 2560 × 1440 가로, 160 dpi (AVD 설정 `hw.lcd.width=2560`, `hw.lcd.height=1440`, `hw.lcd.density=160`) |
 | 휴대폰 에뮬레이터 | Android Studio 기본 Medium Phone (API 37) |
 | 빌드 | Android Studio, JDK 17, Android SDK 35 |
 | 시연 스크립트 | Python 3.11 이상(3.14.6에서 확인), ADB, FFmpeg |
