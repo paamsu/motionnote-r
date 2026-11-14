@@ -12,7 +12,7 @@ APK는 [GitHub Releases](../../releases)에 올려 두었습니다. 차량 APK�
 
 | 파일 | 내용 | 넣을 위치 |
 |---|---|---|
-| `모션노트_R_release.apk` | 차량 앱(Pleos Connect 에뮬레이터용) | `apk/` |
+| `MotionNote_R_release.apk` | 차량 앱(Pleos Connect 에뮬레이터용) | `apk/` |
 | `R-phone.apk` | 휴대폰 주차 위치 시연 앱(Android 휴대폰 에뮬레이터용) | `phone/` |
 
 ## 테스트 환경
@@ -34,7 +34,7 @@ Pleos 에뮬레이터 설치는 [Pleos Connect Emulator 설치 및 실행](https
 Pleos 에뮬레이터를 켠 뒤 실행합니다. `emulator-5554`와 사용자 번호 `10`은 에뮬레이터에 맞게 바꿉니다.
 
 ```sh
-adb -s emulator-5554 install -r --user 10 apk/모션노트_R_release.apk
+adb -s emulator-5554 install -r --user 10 apk/MotionNote_R_release.apk
 cd demo
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
@@ -71,7 +71,7 @@ python3 phone/parking_phone.py --serial emulator-5556 --install --allow-notifica
 - Windows에서는 경로에 한글이 있으면 빌드가 멈출 수 있으니 영문 경로에서 빌드합니다.
 
 ```sh
-apksigner sign --ks 내_키.jks --out apk/모션노트_R_release.apk \
+apksigner sign --ks 내_키.jks --out apk/MotionNote_R_release.apk \
   src/ui/android/build/outputs/apk/contestRelease/app-contestRelease-unsigned.apk
 ```
 
